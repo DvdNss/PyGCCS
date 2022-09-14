@@ -17,7 +17,8 @@
 ## About The Project
 
 Looking for a way to link some of your machine learning or business workflows to Cloud Storage? Then this is the perfect
-package for you.
+package for you. However, you'd have to create an IAM service account key first so please go
+there check how to [create an IAM service account key](https://cloud.google.com/iam/docs/creating-managing-service-account-keys?hl=en#console).
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -69,21 +70,25 @@ pip install -r requirements.txt
 ### Upload
 
 * For a single file:
+
 ```shell
 python ./PyGCCS/upload.py -p gc_project_id -b bucket_name -d folder_in_bucket -r filename_for_destination -f local_filename -k path_to_IAM_json_key
 ```
 
 * For several files:
+
 ```shell
 python ./PyGCCS/upload.py -p gc_project_id -b bucket_name -d folder_in_bucket -f "local_filename_1&local_filename_2" -k path_to_IAM_json_key
 ```
 
 * For a folder (all files of the folder will be uploaded one by one to the folder in your bucket):
+
 ```shell
 python ./PyGCCS/upload.py -p gc_project_id -b bucket_name -d folder_in_bucket --folder local_folder -k path_to_IAM_json_key 
 ```
 
 * You can also use the function:
+
 ```python
 from PyGCCS.upload import upload_to_bucket
 
@@ -100,11 +105,13 @@ upload_to_bucket(
 ### Download
 
 * For a single file:
+
 ```shell
 python ./PyGCCS/download.py -p gc_project_id -b bucket_name -d local_folder_to_put_files_in -f files_to_download_separated_by_& -k path_to_IAM_json_key
 ```
 
 * You can also use the function:
+
 ```python
 from PyGCCS.download import download_from_bucket
 
