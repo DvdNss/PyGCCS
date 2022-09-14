@@ -77,7 +77,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser("Upload files or folders to GCS bucket. ")
     parser.add_argument("-p", "--project_id", help="Google Cloud project ID. ", type=str)
     parser.add_argument("-b", "--bucket_name", help="Google Cloud bucket name. ", type=str)
-    parser.add_argument("-d", "--destination", help="Google Cloud bucket destination. ", type=str)
+    parser.add_argument("-d", "--destination", help="Google Cloud bucket destination. ", type=str, default="")
     parser.add_argument("-r", "--rename", help="New name for file in bucket. ", type=str, default=None)
     parser.add_argument("-f", "--files", help="Files to upload to GC bucket separated by &. ", default=None)
     parser.add_argument("--folder", help="Folder to upload to GC bucket. ", default=None)
