@@ -17,8 +17,8 @@
 ## About The Project
 
 Looking for a way to link some of your machine learning or business workflows to Cloud Storage? Then this is the perfect
-package for you. However, you'd have to create an IAM service account key first so please go
-there check how to [create an IAM service account key](https://cloud.google.com/iam/docs/creating-managing-service-account-keys?hl=en#console).
+package for you. However, you'd have to **create a service account key** first so please go
+there check how to [create a service account key](https://cloud.google.com/iam/docs/creating-managing-service-account-keys?hl=en#console).
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
