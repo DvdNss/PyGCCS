@@ -1,16 +1,23 @@
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-<h3 align="center">PROJECT_NAME</h3>
 <p align="center">
-  <img src="PROJECT_IMG_LINK" />
+  <img src="resource/logo.png" />
 </p>
 
 <!-- ABOUT THE PROJECT -->
 
-## About The Project 
+## About The Project
 
-PROJECT_ABOUT
+Looking for a way to link some of your machine learning or business workflows to Cloud Storage? Then this is the perfect
+package for you.
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -43,10 +50,15 @@ PROJECT_ABOUT
 1. Clone the repo
 
 ```shell
-git clone PROJECT_LINK
+git clone https://github.com/DvdNss/PyGCCS.git
 ```
 
-2. Install requirements
+2. Move to the repo folder
+```shell
+cd PyGCCS
+```
+
+4. Install requirements
 
 ```shell
 pip install -r requirements.txt
@@ -73,26 +85,26 @@ David NAISSE - [@LinkedIn](https://www.linkedin.com/in/davidnaisse/) - private.d
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/sunwaee/PROJECT_NAME.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/DvdNss/PyGCCS.svg?style=for-the-badge
 
-[contributors-url]: https://github.com/Sunwaee/PROJECT_NAME/graphs/contributors
+[contributors-url]: https://github.com/DvdNss/PyGCCS/graphs/contributors
 
-[forks-shield]: https://img.shields.io/github/forks/sunwaee/PROJECT_NAME.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/DvdNss/PyGCCS.svg?style=for-the-badge
 
-[forks-url]: https://github.com/Sunwaee/PROJECT_NAME/network/members
+[forks-url]: https://github.com/DvdNss/PyGCCS/network/members
 
-[stars-shield]: https://img.shields.io/github/stars/sunwaee/PROJECT_NAME.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/DvdNss/PyGCCS.svg?style=for-the-badge
 
-[stars-url]: https://github.com/Sunwaee/PROJECT_NAME/stargazers
+[stars-url]: https://github.com/DvdNss/PyGCCS/stargazers
 
-[issues-shield]: https://img.shields.io/github/issues/sunwaee/PROJECT_NAME.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/DvdNss/PyGCCS.svg?style=for-the-badge
 
-[issues-url]: https://github.com/Sunwaee/PROJECT_NAME/issues
+[issues-url]: https://github.com/DvdNss/PyGCCS/issues
 
-[license-shield]: https://img.shields.io/github/license/sunwaee/PROJECT_NAME.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/DvdNss/PyGCCS.svg?style=for-the-badge
 
-[license-url]: https://github.com/Sunwaee/PROJECT_NAME/blob/master/LICENSE.txt
+[license-url]: https://github.com/DvdNss/PyGCCS/blob/master/LICENSE.txt
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 
-[linkedin-url]: https://www.linkedin.com/in/davidnaisse/
+[linkedin-url]: https://www.linkedin.com/in/dvdxnss/
