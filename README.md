@@ -95,7 +95,7 @@ from PyGCCS.upload import upload_to_bucket
 upload_to_bucket(
     project_id="gc_project_name",  # GCP project name
     bucket_name="bucket_name",  # Cloud storage bucket name 
-    destination="destination_folder_in_bucket",  # Folder to put  files in in bucket
+    destination="destination_folder_in_bucket",  # Folder to put files in (bucket)
     files="files_separated_by_&",  # Set to None for folder
     folder="local_folder_to_upload",  # Set to None for files only 
     key="path_to_IAM_json_key"  # Path to IAM service account json key
