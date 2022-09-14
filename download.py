@@ -15,7 +15,6 @@ import os
 from typing import List
 
 from google.cloud import storage
-# This is my favorite logger
 from tqdm import tqdm
 
 logging.basicConfig(
@@ -68,7 +67,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser("Download file from GCS bucket. ")
     parser.add_argument("-p", "--project_id", help="Google Cloud project ID. ", type=str)
     parser.add_argument("-b", "--bucket_name", help="Google Cloud bucket name. ", type=str)
-    parser.add_argument("-d", "--destination", help="Local destination folder. ", type=str)
+    parser.add_argument("-d", "--destination", help="Local destination folder. ", type=str, default="")
     parser.add_argument("-f", "--files", help="Files to download from GC bucket separated by &. ", type=str)
     parser.add_argument("-k", "--key", help="JSON key for bucket access. ", default="key.json")
     args = parser.parse_args()
