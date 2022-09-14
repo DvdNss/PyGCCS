@@ -1,9 +1,9 @@
 """
 
-    PROJECT: api
+    PROJECT: PyGCCS
     FILENAME: download.py
     AUTHOR: David NAISSE
-    DATE: July 16, 2022
+    DATE: September 13, 2022
 
     DESCRIPTION: Download file from GCP bucket.
     
