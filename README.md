@@ -110,6 +110,12 @@ upload_to_bucket(
 python ./PyGCCS/download.py -p gc_project_id -b bucket_name -d local_folder_to_put_files_in -f files_to_download_separated_by_& -k path_to_IAM_json_key
 ```
 
+* For several files:
+
+```shell
+python ./PyGCCS/download.py -p gc_project_id -b bucket_name -d local_folder_to_put_files_in -f "file_to_dl_1&file_to_dl_2" -k path_to_IAM_json_key
+```
+
 * You can also use the function:
 
 ```python
