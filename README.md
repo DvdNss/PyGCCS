@@ -115,7 +115,7 @@ python ./PyGCCS/download.py -p gc_project_id -b bucket_name -d local_folder_to_p
 ```python
 from PyGCCS.download import download_from_bucket
 
-upload_to_bucket(
+download_from_bucket(
     project_id="gc_project_name",  # GCP project name
     bucket_name="bucket_name",  # Cloud storage bucket name 
     destination="local_destination_folder",  # Folder to put files in (local)à
