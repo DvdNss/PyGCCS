@@ -28,14 +28,11 @@ package for you.
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
     <ul>
-      <li><a href="#structure">Structure</a></li>
-      <li><a href="#example">Example</a></li>
+        <li><a href="#upload">Upload</a></li>
+        <li><a href="#download">Download</a></li>
     </ul>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -45,7 +42,7 @@ package for you.
 
 ## Getting Started
 
-### Installation
+To install this package in your own projects, please use the commands below.
 
 1. Clone the repo
 
@@ -54,6 +51,7 @@ git clone https://github.com/DvdNss/PyGCCS.git
 ```
 
 2. Move to the repo folder
+
 ```shell
 cd PyGCCS
 ```
@@ -68,13 +66,56 @@ pip install -r requirements.txt
 
 ## Usage
 
-### Structure
+### Upload
 
-PROJECT_STRUCTURE
+* For a single file:
+```shell
+python ./PyGCCS/upload.py -p gc_project_id -b bucket_name -d folder_in_bucket -r filename_for_destination -f local_filename -k path_to_IAM_json_key
+```
 
-### Example
+* For several files:
+```shell
+python ./PyGCCS/upload.py -p gc_project_id -b bucket_name -d folder_in_bucket -f "local_filename_1&local_filename_2" -k path_to_IAM_json_key
+```
 
-PROJECT_STEPS
+* For a folder (all files of the folder will be uploaded one by one to the folder in your bucket):
+```shell
+python ./PyGCCS/upload.py -p gc_project_id -b bucket_name -d folder_in_bucket --folder local_folder -k path_to_IAM_json_key 
+```
+
+* You can also use the function:
+```python
+from PyGCCS.upload import upload_to_bucket
+
+upload_to_bucket(
+    project_id="gc_project_name",  # GCP project name
+    bucket_name="bucket_name",  # Cloud storage bucket name 
+    destination="destination_folder_in_bucket",  # Folder to put  files in in bucket
+    files="files_separated_by_&",  # Set to None for folder
+    folder="local_folder_to_upload",  # Set to None for files only 
+    key="path_to_IAM_json_key"  # Path to IAM service account json key
+)
+```
+
+### Download
+
+* For a single file:
+```shell
+python ./PyGCCS/download.py -p gc_project_id -b bucket_name -d local_folder_to_put_files_in -f files_to_download_separated_by_& -k path_to_IAM_json_key
+```
+
+* You can also use the function:
+```python
+from PyGCCS.download import download_from_bucket
+
+upload_to_bucket(
+    project_id="gc_project_name",  # GCP project name
+    bucket_name="bucket_name",  # Cloud storage bucket name 
+    destination="local_destination_folder",  # Folder to put files in (local)à
+    files="files_to_download_separated_by_&",  # files to download
+    key="path_to_IAM_json_key"  # Path to IAM service account json key
+)
+```
 
 <!-- CONTACT -->
 
