@@ -26,7 +26,8 @@ logging.basicConfig(
 log = logging.info
 
 
-def upload_to_bucket(project_id: str, bucket_name: str, destination: str, rename: str, files, folder, key: str):
+def upload_to_bucket(project_id: str, bucket_name: str, destination: str, rename: str = None, files=None, folder=None,
+                     key: str = "key.json"):
     """
     Upload files or folder to GCP bucket.
 
