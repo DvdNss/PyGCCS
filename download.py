@@ -35,7 +35,7 @@ def download_from_bucket(project_id: str, bucket_name: str, destination: str, fi
     :param bucket_name: google cloud bucket name
     :param destination: local destination folder
     :param files: files to download from GC bucket
-    :param key: JSON service account key
+    :param key: GCP service account json key
     """
 
     # Set env variable
